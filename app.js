@@ -32,7 +32,7 @@ app.get('/crash', (req, res) => {
     console.log('>>>>>>> Server down!! <<<<<<<')
     process.exit(1) });
 
-app.listen(port, () => console.log('Server wtf runing  at PORT', port));
+app.listen(process.env.PORT || 3000, () => console.log('Server wtf runing  at PORT', process.env.PORT || 3000));
 
 
 ////////////////////////////////////////////////////////////////
